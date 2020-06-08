@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jan Pamula</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root {
+            --c: orange;
+            --altura: 70vh;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        header {
+            width: 100%;
+            height: 70vh;
+            background: orange;
+            display: flex;
+        }
+
+        header div {
+            position: relative;
+            width: 50%;
+            height: 70vh;
+        }
+
+        header div img {
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            top: 72vh;
+            width: 100%;
+            height: 70vh;
+            right: 50%;
+        }
+
+        article {
+            width: 35.4em;
+            margin: auto;
+            font-family: 'PT Serif', serif;
+        }
+
+        article>p:first-child {
+            padding: 8vw 0;
+            text-align: justify;
+            line-height: 1.4em;
+            color: var(--c);
+            column-count: 2;
+            column-gap: 2em;
+            column-rule: 1px solid var(--c);
+            hyphens: auto;
+        }
+
+        article #cos>p:first-child::first-letter {
+            color: orange;
+            font-family: 'PT Serif', serif;
+            font-size: 5em;
+            float: left;
+            margin-right: 0.2em;
+            margin-top: -0.35em;
+            margin-bottom: -0.2em;
+            padding-bottom: 0.2em;
+            padding-right: 0.2em;
+
+        }
+
+        article #cos {
+            text-align: justify;
+            hyphens: auto;
+            width: auto;
+            padding: 0 3em;
+
+
+        }
+
+        article #cos p {
+            padding: 0 0 1.5em 0;
+        }
+
+        .cercle,
+        .hexagon {
+            background: orange;
+        }
+
+        .cercle img,
+        .hexagon img {
+
+            mix-blend-mode: hard-light;
+
+        }
+
+        .cerlce,
+        .cercle img {
+            border-radius: 50%;
+        }
+
+        .cercle {
+            max-width: 20em;
+            float: left;
+            margin-left: -8em;
+            shape-margin: 1em;
+            shape-outside: circle(50%)border-box;
+        }
+
+        .hexagon,
+        .hexagon img {
+            clip-path: polygon (0 0, 100% 25%, 86% 72%, 19% 100%, 0 84%, 0 46%);
+        }
+
+        .hexagon {
+            max-width: 20em;
+            float: right;
+            margin-right: -8em;
+            shape-margin: 1em;
+            shape-outside: polygon(0 0, 100% 25%, 86% 72%, 19% 100%, 0 84%, 0 46%) border-box;
+        }
+
+        @media (max-width:600px) {
+
+            body {
+                background: azure;
+                font-size: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bloc_esq">
+            <img src="img/obra.jpg">
+        </div>
+        <div class="bloc_dret">
+            <img src="img/face.jpg">
+            <h1>Jan Pamula</h1>
+        </div>
+    </header>
+    <main>
+        <article>
+            <p>
+                Nacido en 1944 en Spytkowice, cerca de Oświęcim. Estudió pintura y artes gráficas en la Academia de Bellas Artes de Cracovia, 1961-1968, y en la Ecole Nationale Supérieure des Beaux Arts de París, 1967. Obtuvo su diploma en 1968. Actualmente es profesor en la Academia de Bellas Artes de Cracovia. Practica pintura, gráficos y medios electrónicos.
+            </p>
+            <div id="cos">
+                <p>
+                    La lógica de la forma es la esencia y el poder. La estructura superficial, la exterioridad, son solo manifestaciones.
+                    El sentido está oculto debajo de la superficie. Los movimientos de fuerzas debajo de la superficie causan terremotos. En ese momento, toda la acumulación de elementos en la superficie desaparece, pierde parte de su significado, se desvanece: lo débil, lo vago, lo no uniforme.
+                    La tensión máxima de las fuerzas visuales se incluye en las leyes lógicas que se extienden a las acciones a nivel mental, aquellas que se realizan dentro de nuestro sistema perceptivo.
+                    La ley de física se comunica de la misma manera que cualquier otro idioma.
+                    La ley de la física transpuesta al dominio del arte es la ley de la óptica o la geometría.
+                    Creencia en la ley de la física, el lenguaje físico en un factor importante que construye la nueva estructura del lenguaje del arte.
+                    Existen algunos sistemas de idiomas más complejos, pero su aplicación no tiene ningún uso particular, ya que son idiomas privados en la mayoría de los casos.
+                    La base, de la cual surgen los valores verdaderos, está formada por todo lo que es vívido, revelador, que posee el poder de actuar y reaccionar, y, sobre todo, el poder de construir en un sentido universal.
+                    La conexión entre la lógica de la forma y la fisicalidad visual es la base del arte concreto, y es al mismo tiempo la mejor expresión de este género de arte.
+                </p>
+                <div class="cercle">
+                    <img src="img/obra3%20(2).jpg" alt="">
+                </div>
+                <p>
+                    Wyczółkowski en Bydgoszcz, Museo de Arquitectura de Breslavia; Muzeum Okręgowe / Szczecin, Chełm, Lublin, Radom /; Colecciones de la Biblioteca Jagiellonian, Biblioteca de Gdansk, Universidad Tecnológica de Cracovia, Colecciones Gráficas de la Academia de Bellas Artes de Cracovia; Victoria and Albert Museum en Londres; Albertina en Viena; Museo de Arte de Portland en Oregon; Museo Bochum; Museo Mondrian en Amersfoort; Colección Vass, Veszprem; Colección Peter C. Ruppert "Arte concreto en Europa después de 1945", Museo en Würzburg.
+                </p>
+                <div class="hexagon">
+                    <img src="img/obra2%20(2).jpg" alt="">
+                </div>
+                <p>
+                    Es miembro de ZPAP durante muchos años y miembro del "Grupo de Cracovia", un comisario múltiple y miembro del jurado de exposiciones y concursos. Estes artista expone un arte que pocas veces se ve en los museos comunes, un arte geométrico y que hace reflexionar al espectador, queriendo mostrar en cada persona un concepto de obra distinto.
+                </p>
+            </div>
+        </article>
+    </main>
+
+</body>
+
+</html>
